@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户中心</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/userCenter.css">
+</head>
+<body>
+	<!-- <div class='container-fluid'>
+		<div class='row'>
+			<div class='col-md-12'> -->
+				<!-- 导航开始 -->
+				<nav class="navbar myNavbar" id='myNavbar'>
+				  <div class="container">
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+				      	<li><a href="index.html">首页</a></li>
+				        <li><a href="storeList.html">商铺</a></li>
+				        <li><a href="storeList.html">住房</a></li>
+				      </ul>
+				      <form class="navbar-form navbar-left" role="search">
+				        <div class="form-group">
+				          <input type="text" class="form-control" placeholder="Search">
+				        </div>
+				        <button type="submit" class="btn myBtn">搜索</button>
+				      </form>
+				      <ul class="nav navbar-nav navbar-right">
+				        <li><a href="logIn.html" target='_blank'>登录</a></li>
+				       <li><a href='register.html' target='_blank'>注册</a></li>
+				       <li><a href='userCenter.html'>我的</a></li>
+				      </ul>
+				    </div>
+				  </div>
+				</nav>
+				<!-- 导航结束 -->
+			<!-- </div>
+		</div> -->
+		<div class='container-fluid'>
+		<div class='row'>
+			<div class='col-md-3'>
+				<div class=' nav nav-tabs col1' role="tablist">
+					<div class='col-md-12 active' role="presentation">
+						<a href="#personalCenter" aria-controls="personalCenter" role="tab" data-toggle="tab">个人中心</a>
+					</div>
+					<div class='col-md-12' role="presentation">
+						<a href="#myPublish" aria-controls="myPublish" role="tab" data-toggle="tab">我已发布</a>
+					</div>
+					<div class='col-md-12' role="presentation">
+						<a href="#myOrder" aria-controls="myOrder" role="tab" data-toggle="tab">预约记录</a>
+					</div>
+					<div class='col-md-12'>
+						<a href="#myRent" aria-controls="myRent" role="tab" data-toggle="tab">租赁记录</a>
+					</div>
+					<div class='col-md-12'>
+						<a href="#myIssue" aria-controls="myRent" role="tab" data-toggle="tab">我要发布</a>
+					</div>
+				</div>
+			</div>
+			<div class='col-md-9'>
+				<div class='row tab-content'>
+					<!-- 个人中心开始 -->
+					<div class='col-md-12 tab-pane active' role="tabpanel" id='personalCenter'>
+						<div class='userInformation'>
+							<p class='userName'>这里是用户名</p>
+							<p class='userEmail'>这里是用户注册时填写的邮箱</p>
+						</div>
+						<div class='userOperation pull-right'>
+							<p class='changePw'><a href='modifyPassword.html'>修改密码</a></p>
+							<p class='loginCancel'><a href='index.html'>安全退出</a></p>
+						</div>
+					</div>
+					<!-- 个人中心结束 -->
+					<!-- 我的发布开始 -->
+					<div class='col-md-12 tab-pane' role="tabpanel" id='myPublish'>
+						<!-- <div class="nav nav-tabs row myPublishA" role="tablist" id='myPublishA'>
+							<div class='col-md-6 active' role="presentation" id='findH'>
+								<a href="#seekHouse" aria-controls="seekHouse" role="tab" data-toggle="tab">找房</a>
+							</div>
+							<div class='col-md-6' role="presentation" id='findR'>
+								<a href="#seekTenement" aria-controls="seekTenement" role="tab" data-toggle="tab">找租户</a>
+							</div>
+						</div> -->
+						<!-- <div class="tab-content row mySeek"> -->
+						<!-- <div class="mySeek"> -->
+							<!-- <div role="tabpanel" class="tab-pane col-md-12 active" id="seekHouse"> -->
+								<!-- 这里是找房子的信息，需要列出对房子的要求，例如：租房信息的标题,房子的价格 -->
+								<!-- 一条记录开始,下面是一个例子-->
+								<!-- <div class='row myRow'>
+									<div class='col-md-12 clearfix'>
+										<h1>求一室一厅的住房</h1>
+										<p>月租不高于700元</p>
+										<p>联系电话:、、、</p>
+										<a href='#' class='cancel'>删除</a>
+									</div>
+								</div> -->
+								<!-- 一条记录结束 -->
+							<!-- </div> -->
+							<!-- <div role="tabpanel" class="tab-pane col-md-12" id="seekTenement"> -->
+								<!-- 在这里显示的是房东的招租信息，例子如下 -->
+								<!-- 一个例子开始 -->
+								<div class='row myRow'>
+									<div class='col-md-3'>
+										<img src="../img/recommed/recomm1.jpg" >
+									</div>
+									<div class='col-md-9 clearfix'>
+										<p>房子每月700元</p>
+										<p>地址：成都市金牛区中海国际社区</p>
+										<p>联系电话：、、、、</p>
+										<a href='#' class='cancel'>删除</a>
+									</div>
+								</div>
+								<!-- 一个例子结束 -->
+							<!-- </div> -->
+						<!-- </div> -->
+						
+						<!-- 如果不存在相关记录需要向用户提示 -->
+					</div>
+					<!-- 我的发布结束 -->
+					<!-- 预约记录开始 -->
+					<div class='col-md-12 tab-pane' role="tabpanel" id='myOrder' class='myOrder'>
+						<!-- 在这里显示的预约看房的记录，下面是一个例子-->
+						<div class='row myRow'>
+							<div class='col-md-3'>
+								<img src="../img/recommed/recomm3.jpg">
+							</div>
+							<div class='col-md-9 clearfix'>
+								<p>标题：旺铺转让</p>
+								<p>地址：成都市金牛区中海国际社区</p>
+								<p>用户：某某某</p>
+								<p>联系电话：、、、、</p>
+								<a href='#' class='cancel'>取消</a>
+								<a href='#' class='cancel'>确认租房</a>
+							</div>
+						</div>
+						<!-- <hr> -->
+						<!-- 例子结束 -->
+					</div>
+					<!-- 预约记录结束 -->
+					<!-- 租赁记录开始 -->
+					<div class='col-md-12 tab-pane' role="tabpanel" id='myRent' class='myRent'>
+						<div class='row myRow'>
+							<div class='col-md-1'>房东：</div>
+							<div class='col-md-3'>某某某</div>
+							<div class='col-md-1'>租客：</div>
+							<div class='col-md-3'>某某某</div>
+							<div class='col-md-2'>房东联系电话：</div>
+							<div class='col-md-2'>、、、、</div>
+						</div>
+					</div>
+					<!-- 租赁记录结束 -->
+					<div class='col-md-12 tab-pane' role="tabpanel" id='myIssue'>
+						<!-- <div class="nav nav-tabs row myIssueA" role="tablist" id='myIssueA'>
+							<div class='col-md-6 active' role="presentation" id='issueH'>
+								<a href="#issueHouse" aria-controls="issueHouse" role="tab" data-toggle="tab">发布房产</a>
+							</div>
+							<div class='col-md-6' role="presentation" id='issueR'>
+								<a href="#issueNeed" aria-controls="issueNeed" role="tab" data-toggle="tab">找房</a>
+							</div>
+						</div> -->
+						<!-- <div class="tab-content row myIssueCont"> -->
+						<!-- <div class="row myIssueCont"> -->
+							<!-- <div class="tab-pane col-md-12 active" id="issueHouse"> -->
+								<!-- 发布房产信息开始 -->
+								<div class='issueHouseBlock'>
+									<form>
+										<h2>发布房产</h2>
+									  <div class="form-group">
+									    <label for="exampleInputIssueTittle">标题:</label>
+									    <input type="text" class="form-control" id="exampleInputIssueTittle" placeholder="标题">
+									  </div>
+									  <div class="form-group">
+									    <label for="exampleInputIssuePrice">价格:（单元：月）</label>
+									    <input type="text" class="form-control" id="exampleInputIssuePrice" placeholder="价格">
+									  </div>
+									  <div class="form-group">
+									    <label for="exampleInputIssueAddress">详细地址:</label>
+									    <input type="password" class="form-control" id="exampleInputIssueAddress" placeholder="详细地址">
+									  </div>
+									  <div class="form-group">
+									    <label for="exampleInputIssueType">房产类型:</label>
+									    <select name='issueType'>
+									    	<option value='请选择' selected>请选择</option>
+									    	<option value='住房'>住房</option>
+									    	<option value='商铺'>商铺</option>
+									    </select>
+									    <!-- <input type="password" class="form-control" id="exampleInputPassword2" placeholder="confirm password"> -->
+									  </div>
+
+
+									  <div id="localImag"><img id="preview" src="#" style="display:none;">
+									  </div>
+
+
+									  <div class="form-group">
+									  	<label for="exampleInputIssueImage">上传图片:</label>
+									  	<input type='file' id="exampleInputIssueImage" name="file">
+									  </div>
+									  <button type="submit" class="btn myBtn">提交</button>
+									  <button type='reset' class="btn myBtnCancel" id='reset'>取消发布</button>
+									</form>
+								</div>
+								<!-- 发布房产信息结束 -->
+							<!-- </div> -->
+							<!-- <div role="tabpanel" class="tab-pane col-md-12" id="issueNeed">
+								需求
+							</div> -->
+						<!-- </div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src='../js/jquery.min.js'></script>
+	<script type="text/javascript" src='../js/bootstrap.min.js'></script>
+	<script type="text/javascript" src='../js/userCenter.js'></script>
+</body>
+</html>

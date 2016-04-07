@@ -8,17 +8,17 @@
 </head>
 <body>
 	
-	<div class='.container-fluid'>
+	<!-- <div class='container-fluid'>
 		<div class='row'>
-			<div class='col-md-12'>
+			<div class='col-md-12'> -->
 				<!-- 导航开始 -->
 				<nav class="navbar myNavbar" id='myNavbar'>
 				  <div class="container">
 				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				      <ul class="nav navbar-nav">
-				      	<li><a href="#">首页</a></li>
-				        <li><a href="#">商铺</a></li>
-				        <li><a href="#">住房</a></li>
+				      	<li><a href="index.html">首页</a></li>
+				        <li><a href="storeList.html">商铺</a></li>
+				        <li><a href="storeList.html">住房</a></li>
 				      </ul>
 				      <form class="navbar-form navbar-left" role="search">
 				        <div class="form-group">
@@ -29,15 +29,16 @@
 				      <ul class="nav navbar-nav navbar-right">
 				        <li><a href="logIn.html" target='_blank'>登录</a></li>
 				       <li><a href='register.html' target='_blank'>注册</a></li>
+				       <li><a href='userCenter.html'>我的</a></li>
 				      </ul>
 				    </div>
 				  </div>
 				</nav>
 				<!-- 导航结束 -->
-			</div>
-		</div>
-		<div class='row'>
-			<div class='col-md-12'>
+			<!-- </div> -->
+		<!-- </div> -->
+		<!-- <div class='row'>
+			<div class='col-md-12'> -->
 				<!-- 轮播开始 -->
 				<div id="carousel-example-generic" class="carousel slide myCarousel" data-ride="carousel">
 				  <!-- Indicators -->
@@ -49,13 +50,13 @@
 				  <!-- Wrapper for slides -->
 				  <div class="carousel-inner" role="listbox">
 				    <div class="item active">
-				      <img src="../img/carou1.jpg">
+				      <img src="../img/carousel/carou1.jpg">
 				    </div>
 				    <div class="item">
-				      <img src="../img/carou2.jpg" >
+				      <img src="../img/carousel/carou2.jpg" >
 				    </div>
 				    <div class="item">
-				      <img src="../img/carou3.jpg" >
+				      <img src="../img/carousel/carou3.jpg" >
 				    </div>
 				  </div>
 				  <!-- Controls -->
@@ -69,53 +70,65 @@
 				  </a>
 				</div>
 				<!-- 轮播结束 -->
-			</div>
-		</div>
-		<div>
+			<!-- </div>
+		</div> -->
+		<div class='container-fluid'>
 			<!-- <ul class="nav nav-tabs" role="tablist"> -->
 				<div class='row nav nav-tabs' id='rowA' role="tablist">
 					<!-- <li role="presentation" class="active"> -->
-						<div class='col-md-6 active' role="presentation">
-							<a href="#shangpu" class='reA'aria-controls="shangpu" role="tab" data-toggle="tab">推荐商铺</a>
+						<div class='col-md-6' role="presentation" >
+							<a href="#shangpu" class='reA active'aria-controls="shangpu" id='recomm1'role="tab" data-toggle="tab">推荐商铺</a>
 						</div>
 					<!-- </li> -->
 					<!-- <li role="presentation"> -->
-						<div class='col-md-6' role="presentation">
-							<a href="#zhufang" class='reA' aria-controls="zhufang" role="tab" data-toggle="tab">推荐住房</a>
+						<div class='col-md-6' role="presentation" >
+							<a href="#zhufang" class='reA' aria-controls="zhufang"id='recomm2' role="tab" data-toggle="tab">推荐住房</a>
 						</div>
 					<!-- </li> -->
 				</div>
 			<!-- </ul> -->
 			<div class="tab-content">
 				<div class='row myComm tab-pane active' role="tabpanel" id="shangpu">
-					<div class='col-md-3 '>
-						<img src="../img/recomm4.jpg">
+					<div class='col-md-2 '>
+						<img src="../img/recommed/recomm4.jpg">
 					</div>
-					<div class='col-md-3'>
-						<img src="../img/recomm2.jpg">
+					<div class='col-md-2'>
+						<img src="../img/recommed/recomm2.jpg">
 					</div>
-					<div class='col-md-3'>
-						<img src="../img/recomm3.jpg">
+					<div class='col-md-2'>
+						<img src="../img/recommed/recomm3.jpg">
+					</div>
+					<div class='col-md-2'>
+						<img src="../img/recommed/recomm9.jpg">
+					</div>
+					<div class='col-md-2'>
+						<img src="../img/recommed/recomm10.jpg">
 					</div>
 				</div>
 
 				<div class='row myComm tab-pane ' role="tabpanel" id="zhufang">
-					<div class='col-md-3 '>
-						<img src="../img/recomm1.jpg">
+					<div class='col-md-2 '>
+						<img src="../img/recommed/recomm1.jpg">
 					</div>
-					<div class='col-md-3'>
-						<img src="../img/recomm5.jpg">
+					<div class='col-md-2'>
+						<img src="../img/recommed/recomm5.jpg">
 					</div>
-					<div class='col-md-3'>
-						<img src="../img/recomm6.jpg">
+					<div class='col-md-2'>
+						<img src="../img/recommed/recomm6.jpg">
+					</div>
+					<div class='col-md-2'>
+						<img src="../img/recommed/recomm7.jpg">
+					</div>
+					<div class='col-md-2'>
+						<img src="../img/recommed/recomm8.jpg">
 					</div>
 				</div>
 
 			</div>
 		</div>
 		<div class='row'>
-			<div class='col-md-12 footer'>
-				<p>Copyright © 2016 jj.com All Rights Reserved | 京ICP备 13046641号-3</p>
+			<div class='col-md-12 '>
+				<p class='footer'>Copyright © 2016 jj.com All Rights Reserved | 京ICP备 13046641号-3</p>
 			</div>
 		</div>
 	</div>

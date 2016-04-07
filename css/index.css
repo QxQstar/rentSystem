@@ -20,7 +20,10 @@ body{
 .row .reA{
 	display: block;height: 22px;margin: 5px 0 0 0; border-top: 5px solid rgba(0,0,0,0);
 	background-color:#ffffff ; color:#E33434; font:bolder 20px '宋体';
-	 line-height: 22px; text-align: center; 
+	 line-height: 22px; text-align: center;
+}
+#rowA .active{
+	background-color: #CCC7C7;
 }
 .myComm{
 	margin:10px auto 0 auto; 
@@ -31,10 +34,10 @@ body{
 .myComm div img{
 	margin: 10px 
 }
-.row .reA:hover{
+/*.row .reA:hover{
 	border-top:5px solid #E33434;
-}
-.footer p{
-	margin-top:30px;line-height: 30px; height: 30px;text-align: center; font: 15px '宋体';
-	color: #EFB5B5;
+}*/
+.footer {
+	margin-top:30px;line-height: 30px; height: 30px;text-align: center; font: 12px '宋体';
+	color: #EFB5B5; margin-top: 10%;
 }

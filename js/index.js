@@ -12,18 +12,25 @@ function addLoadEvent(func){
 
 
 function addOutline(){
-	var row = document.getElementById('rowA');
-	var reA = row.getElementsByTagName('a');
-	//var len = reA.length;
-	for(var i = 0;i < reA.length;i++){
-		reA[i].onclick = function(){
-			oldStyle = this.getAttribute('style');
-			alert(oldStyle);
-			// alert(reA.length);
-		};
-	}
+	// var row = document.getElementById('rowA');
+	// var reA = row.getElementsByTagName('a');
+	// //var len = reA.length;
+	// for(var i = 0;i < reA.length;i++){
+	// 	reA[i].onclick = function(){
+	// 		oldStyle = this.getAttribute('style');
+	// 		alert(oldStyle);
+	// 		// alert(reA.length);
+	// 	};
+	// }
+	var recomm1 = document.getElementById('recomm1');
+	var recomm2 = document.getElementById('recomm2');
+	recomm1.onclick = function(){
+		recomm1.className = 'reA active';
+		recomm2.className = 'reA';
+	};
+	recomm2.onclick = function(){
+		recomm2.className = 'reA active';
+		recomm1.className = 'reA';
+	};
 }
 addLoadEvent(addOutline);
-// function outline(j){
-// 	reA[1].setAttribute('style','outline-top:#E33434 solid 2px');
-// }

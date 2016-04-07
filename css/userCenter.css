@@ -1,0 +1,83 @@
+body{
+	overflow-x: hidden;
+}
+.myNavbar{
+	background-color: #E33434; border-radius: 0;
+}
+.myNavbar a{
+	color: #ffffff; font: 18px '宋体';
+}
+#myNavbar a:hover{text-decoration: underline; background-color: #E33434;
+}
+#myNavbar a:visited{background-color: #E33434;
+}
+.col1 div{
+	margin-left: 37%; font: 17px '宋体'; height: 30px;
+}
+.col1 div a{
+	color: #777; line-height: 30px; font-weight: bold;
+}
+.userInformation .userName{
+	color: #444; font:18px '宋体';
+}
+.userInformation .userEmail{
+	color: #E33434; font: italic 12px '宋体';
+}
+.userOperation p a{
+	font:  bold 12px '宋体';color: #E33434;
+}
+.myPublishA .active{
+	background-color: #CBC6C6;
+}
+.myPublishA div{
+	text-align: center;
+}
+.myPublishA a{
+	color: #EC633C;
+}
+.clearfix:after{
+	content: '.';display: block; clear:both;visibility: hidden;height: 0;width: 0;
+}
+.clearfix{
+	zoom:1;
+}
+.myRow p{
+	color: #444; font: 15px '宋体';
+}
+ .myRow{
+	border-bottom: 1px #CFCCCC solid; padding-bottom: 10px;
+}
+.row .cancel{
+	float: right; color: #EC633C; margin-right: 10px;
+}
+.myOrder p{
+	color: #444; font: 15px '宋体';
+}
+.issueHouseBlock{
+	width: 450px; margin-left: 50px;
+	margin-top:0; border: 1px solid #D0CDCD; border-radius: 5px;
+	-moz-box-shadow:1px 1px 3px #D0CDCD; 
+	-webkit-box-shadow:1px 1px 3px #D0CDCD;
+	box-shadow:1px 1px 3px #D0CDCD; background-color: #ffffff;
+}
+.issueHouseBlock form{
+	margin: 10px auto ;width: 340px;
+}
+.issueHouseBlock form h2{
+	text-align: center; font: 20px '宋体';
+}
+.issueHouseBlock form label{
+	font: 15px '宋体';color: #555555;
+}
+form .myBtn{
+	background-color: #E33434; color: #ffffff; font: bold 15px '宋体';
+}
+form .myBtn:hover{
+	color: #ffffff;text-decoration: underline;
+}
+/*form a,form a:hover{
+	
+}*/
+form .myBtnCancel{
+	float: right;color: #E33434; background-color: rgba(0,0,0,0);
+}
