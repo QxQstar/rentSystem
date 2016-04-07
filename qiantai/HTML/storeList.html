@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商铺列表</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/storeList.css">
+</head>
+<body>
+	<!-- 导航开始 -->
+	<nav class="navbar myNavbar" id='myNavbar'>
+	  <div class="container">
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	      	<li><a href="index.html">首页</a></li>
+	        <li><a href="storeList.html">商铺</a></li>
+	        <li><a href="storeList.html">住房</a></li>
+	      </ul>
+	      <form class="navbar-form navbar-left" role="search">
+	        <div class="form-group">
+	          <input type="text" class="form-control" placeholder="Search">
+	        </div>
+	        <button type="submit" class="btn myBtn">搜索</button>
+	      </form>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="logIn.html" target='_blank'>登录</a></li>
+	       <li><a href='register.html' target='_blank'>注册</a></li>
+	       <li><a href='userCenter.html'>我的</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+	<!-- 导航结束 -->
+				<!-- <form >
+					<div class="form-group row">
+						<div class='col-md-9'>
+					  		<input type="text" class="form-control" id="seek" placeholder="输入关键字">
+					  	</div>
+					  	<div class='col-md-4'>
+					  		<input type='submit' class='btn'>
+					  	</div>
+					</div>
+				</form> -->
+				<!-- <div class='container'>
+					<form>
+						<div class='row'>
+							<div class='col-md-6'>
+								<input type="text" class="form-control" id="seek" placeholder="输入关键字">
+							</div>
+							<div class='col-md-3'>
+								<input type='submit' class='btn'>
+							</div>
+						</div>
+					</form>
+				</div> -->
+	<div class='container'>
+		<form class='seekForm'>
+			<div class='row'>
+				<div class='col-md-6 col-md-offset-2'>
+					<input type="text" class="form-control" id="seek" placeholder="输入关键字">
+				</div>
+				<div class='col-md-3'>
+					<button type='submit' class='btn' id='ok'>查询</button>
+				</div>
+			</div>
+		</form>
+		<!-- 这里是商铺列表，下面是一个例子 -->
+		<div class='row listItem'>
+			<div class='col-md-2 photo'>
+				<img src="../img/recommed/recomm3.jpg">
+			</div>
+			<div class='col-md-5'>
+				<div>
+					<p>这里填标题</p>
+					<p>这里是房价</p>
+					<p>这里是地址</p>
+				</div>
+			</div>
+			<div class='col-md-1'><a href="#">预约</a></div>
+		</div>
+		<!-- 例子结束 -->
+	</div>
+</body>
+</html>

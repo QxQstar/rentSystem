@@ -60,24 +60,30 @@ body{
 	-webkit-box-shadow:1px 1px 3px #D0CDCD;
 	box-shadow:1px 1px 3px #D0CDCD; background-color: #ffffff;
 }
-.issueHouseBlock form{
+.issueHouseBlock .formOne{
 	margin: 10px auto ;width: 340px;
 }
-.issueHouseBlock form h2{
+.issueHouseBlock .formOne h2{
 	text-align: center; font: 20px '宋体';
 }
-.issueHouseBlock form label{
+.issueHouseBlock .formOne label{
 	font: 15px '宋体';color: #555555;
 }
-form .myBtn{
+.formOne .myBtn{
 	background-color: #E33434; color: #ffffff; font: bold 15px '宋体';
 }
-form .myBtn:hover{
+.formOne .myBtn:hover{
 	color: #ffffff;text-decoration: underline;
 }
 /*form a,form a:hover{
 	
 }*/
-form .myBtnCancel{
+.formOne .myBtnCancel{
 	float: right;color: #E33434; background-color: rgba(0,0,0,0);
+}
+.formTwo textarea{
+	width: 500px; display: block; margin-left: 45px;
+}
+.formOne label{
+	font: 15px '宋体';color: #555555;
 }

@@ -53,7 +53,10 @@
 						<a href="#myRent" aria-controls="myRent" role="tab" data-toggle="tab">租赁记录</a>
 					</div>
 					<div class='col-md-12'>
-						<a href="#myIssue" aria-controls="myRent" role="tab" data-toggle="tab">我要发布</a>
+						<a href="#myIssue" aria-controls="myIssue" role="tab" data-toggle="tab">我要发布</a>
+					</div>
+					<div class='col-md-12'>
+						<a href="#myNote" aria-controls="myNote" role="tab" data-toggle="tab">留言板</a>
 					</div>
 				</div>
 			</div>
@@ -162,50 +165,56 @@
 						<!-- <div class="row myIssueCont"> -->
 							<!-- <div class="tab-pane col-md-12 active" id="issueHouse"> -->
 								<!-- 发布房产信息开始 -->
-								<div class='issueHouseBlock'>
-									<form>
-										<h2>发布房产</h2>
-									  <div class="form-group">
-									    <label for="exampleInputIssueTittle">标题:</label>
-									    <input type="text" class="form-control" id="exampleInputIssueTittle" placeholder="标题">
-									  </div>
-									  <div class="form-group">
-									    <label for="exampleInputIssuePrice">价格:（单元：月）</label>
-									    <input type="text" class="form-control" id="exampleInputIssuePrice" placeholder="价格">
-									  </div>
-									  <div class="form-group">
-									    <label for="exampleInputIssueAddress">详细地址:</label>
-									    <input type="password" class="form-control" id="exampleInputIssueAddress" placeholder="详细地址">
-									  </div>
-									  <div class="form-group">
-									    <label for="exampleInputIssueType">房产类型:</label>
-									    <select name='issueType'>
-									    	<option value='请选择' selected>请选择</option>
-									    	<option value='住房'>住房</option>
-									    	<option value='商铺'>商铺</option>
-									    </select>
-									    <!-- <input type="password" class="form-control" id="exampleInputPassword2" placeholder="confirm password"> -->
-									  </div>
+						<div class='issueHouseBlock'>
+							<form class='formOne'>
+								<h2>发布房产</h2>
+							  <div class="form-group">
+							    <label for="exampleInputIssueTittle">标题:</label>
+							    <input type="text" class="form-control" id="exampleInputIssueTittle" placeholder="标题">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputIssuePrice">价格:（单元：月）</label>
+							    <input type="text" class="form-control" id="exampleInputIssuePrice" placeholder="价格">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputIssueAddress">详细地址:</label>
+							    <input type="password" class="form-control" id="exampleInputIssueAddress" placeholder="详细地址">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputIssueType">房产类型:</label>
+							    <select name='issueType'>
+							    	<option value='请选择' selected>请选择</option>
+							    	<option value='住房'>住房</option>
+							    	<option value='商铺'>商铺</option>
+							    </select>
+							    <!-- <input type="password" class="form-control" id="exampleInputPassword2" placeholder="confirm password"> -->
+							  </div>
 
 
-									  <div id="localImag"><img id="preview" src="#" style="display:none;">
-									  </div>
+							  <div id="localImag"><img id="preview" src="#" style="display:none;">
+							  </div>
 
 
-									  <div class="form-group">
-									  	<label for="exampleInputIssueImage">上传图片:</label>
-									  	<input type='file' id="exampleInputIssueImage" name="file">
-									  </div>
-									  <button type="submit" class="btn myBtn">提交</button>
-									  <button type='reset' class="btn myBtnCancel" id='reset'>取消发布</button>
-									</form>
+							  <div class="form-group">
+							  	<label for="exampleInputIssueImage">上传图片:</label>
+							  	<input type='file' id="exampleInputIssueImage" name="file">
+							  </div>
+							  <button type="submit" class="btn myBtn">提交</button>
+							  <button type='reset' class="btn myBtnCancel" id='reset'>取消发布</button>
+							</form>
+						</div>
+					</div>
+						<!-- 发布房产信息结束 -->
+						<!-- 留言板开始 -->	
+						<div class='col-md-12 tab-pane' role="tabpanel" id='myNote'>
+							<form class='formTwo'>
+								<div class='form-group'>
+									<label for='exampleInputNote'>留言板:</label>
+									<textarea cols='50' rows='10' maxlength='1000'></textarea>
 								</div>
-								<!-- 发布房产信息结束 -->
-							<!-- </div> -->
-							<!-- <div role="tabpanel" class="tab-pane col-md-12" id="issueNeed">
-								需求
-							</div> -->
-						<!-- </div> -->
+							</form>
+						</div>
+						<!-- 留言板结束 -->	
 					</div>
 				</div>
 			</div>

@@ -1,0 +1,25 @@
+.myNavbar{
+	background-color: #E33434; border-radius: 0;
+}
+.myNavbar a{
+	color: #ffffff; font: 18px '宋体';
+}
+#myNavbar a:hover{text-decoration: underline; background-color: #E33434;
+}
+#myNavbar a:visited{background-color: #E33434;
+}
+.listItem{
+	border-bottom: 1px solid #D3CCCC; padding-bottom: 10px;
+}
+.listItem p{
+	color: #878181;font: 15px '宋体';
+}
+.listItem a{
+	color: #D85454;
+}
+.photo{
+	margin-right: 20px;
+}
+.seekForm{
+	margin-bottom: 20px;
+}
