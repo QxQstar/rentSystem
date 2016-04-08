@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>房产信息管理</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/estatesMange.css">
+</head>
+<body>
+	<!-- 导航开始 -->
+	<div class='navbar'>
+		<ul class='navList clearfloat'>
+			<li><a href="index.html">首页</a></li>
+			<li><a href="userManage.html">用户管理</a></li>
+			<li><a href="estatesMange.html">房产信息管理</a></li>
+			<li><a href="index.html">房产租赁管理</a></li>
+		</ul>
+	</div>
+	<!-- 导航结束 -->
+
+	<div class='container'>
+		<div class='row outerRow'>
+			<div class='col-md-2 col1'>
+				<div class='row'>
+					<div role="presentation"class='col-md-12 active deleteA'>
+						<a href="#delete" aria-controls="delete" role="tab" data-toggle="tab">删除房产信息</a>
+					</div>
+					<div role="presentation" class='col-md-12 addA'>
+						<a href="#add" aria-controls="add" role="tab" data-toggle="tab">发布房产信息</a>
+					</div>
+					<div role="presentation" class='col-md-12 modifyA'>	
+						<a href="#modify" aria-controls="modify" role="tab" data-toggle="tab">修改房产信息</a>
+					</div>
+				</div>
+			</div>
+			<div class='col-md-9 tab-content'>
+				<!-- 删除房产模块开始 -->
+					<div role="tabpanel" class="tab-pane active delete" id="delete">
+						<form class='seekForm col-md-offset-1'>
+							<div class='row'>
+								<div class='col-md-6 '>
+									<input type="text" class="form-control" id="seek" placeholder="输入关键字">
+								</div>
+								<div class='col-md-3'>
+									<button type='submit' class='btn' id='ok'>查询</button>
+								</div>
+							</div>
+						</form>
+						<div class='row header'>
+							<div class='col-md-3'>标题</div>
+							<div class='col-md-3'>地址</div>
+							<div class='col-md-3'>图片</div>
+							<div class='col-md-2'>价格</div>
+
+							<div class='col-md-1'>操作</div>
+						</div>
+						<!-- 下面是用户的信息 这里有一个例子-->
+						<div class='row show'>
+							<div class='col-md-3'>旺铺出租</div>
+							<div class='col-md-3'>成都市金牛区中海国际社区</div>
+							<div class='col-md-3'><img src="../../qiantai/img/recommed/recomm1.jpg"></div>
+							<div class='col-md-2'>700元</div>
+							<div class='col-md-1'><a href='#'>删除</a></div>
+						</div>
+						<!-- 例子结束 -->
+					</div>
+					<!-- 删除房产模块结束 -->
+					<!-- 添加房产模块开始 -->
+					<div role="tabpanel" class="tab-pane add" id="add">
+						<div class='issueHouseBlock'>
+							<form class='formOne'>
+								<h2>发布房产</h2>
+							  <div class="form-group">
+							    <label for="exampleInputIssueTittle">标题:</label>
+							    <input type="text" class="form-control" id="exampleInputIssueTittle" placeholder="标题">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputIssuePrice">价格:（单元：月）</label>
+							    <input type="text" class="form-control" id="exampleInputIssuePrice" placeholder="价格">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputIssueAddress">详细地址:</label>
+							    <input type="password" class="form-control" id="exampleInputIssueAddress" placeholder="详细地址">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputIssueType">房产类型:</label>
+							    <select name='issueType'>
+							    	<option value='请选择' selected>请选择</option>
+							    	<option value='住房'>住房</option>
+							    	<option value='商铺'>商铺</option>
+							    </select>
+							    <!-- <input type="password" class="form-control" id="exampleInputPassword2" placeholder="confirm password"> -->
+							  </div>
+
+
+							  <div id="localImag"><img id="preview" src="#" style="display:none;">
+							  </div>
+
+
+							  <div class="form-group">
+							  	<label for="exampleInputIssueImage">上传图片:</label>
+							  	<input type='file' id="exampleInputIssueImage" name="file">
+							  </div>
+							  <button type="submit" class="btn myBtn">提交</button>
+							  <button type='reset' class="btn myBtnCancel" id='reset'>取消发布</button>
+							</form>
+						</div>
+					</div>
+					<!-- 添加房产模块结束 -->
+					<!-- 修改房产模块开始 -->
+					<div role="tabpanel" class="tab-pane modify" id="modify">
+						<form class='seekForm'>
+							<div class='row'>
+								<div class='col-md-6 col-md-offset-1'>
+									<input type="text" class="form-control" id="seek" placeholder="输入关键字">
+								</div>
+								<div class='col-md-3'>
+									<button type='submit' class='btn' id='ok'>查询</button>
+								</div>
+							</div>
+						</form>
+						<div class='row header'>
+							<div class='col-md-3'>标题</div>
+							<div class='col-md-3'>地址</div>
+							<div class='col-md-3'>图片</div>
+							<div class='col-md-2'>价格</div>
+
+							<div class='col-md-1'>操作</div>
+						</div>
+						<!-- 下面是用户的信息 这里有一个例子-->
+						<div class='row show'>
+							<div class='col-md-3'>旺铺出租</div>
+							<div class='col-md-3'>成都市金牛区中海国际社区</div>
+							<div class='col-md-3'><img src="../../qiantai/img/recommed/recomm1.jpg"></div>
+							<div class='col-md-2'>700元</div>
+							<div class='col-md-1'><a href='estatesMessageModify.html' target='_blank'>修改</a></div>
+						</div>
+						<!-- 例子结束 -->
+					</div>
+					<!-- 修改房产模块结束 -->
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src='../JS/jquery.min.js'></script>
+	<script type="text/javascript" src='../JS/bootstrap.min.js'></script>
+	<script type="text/javascript" src='../../qiantai/js/userCenter.js'></script>
+</body>
+</html>

@@ -8,28 +8,31 @@
 </head>
 <body>
 	<!-- 导航开始 -->
-	<nav class="navbar myNavbar" id='myNavbar'>
-	  <div class="container">
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	      	<li><a href="index.html">用户管理</a></li>
-	        <li><a href="storeList.html">房产信息管理</a></li>
-	        <li><a href="storeList.html">房产租赁管理</a></li>
-	      </ul>
-	      <form class="navbar-form navbar-left" role="search">
-	        <div class="form-group">
-	          <input type="text" class="form-control" placeholder="Search">
-	        </div>
-	        <button type="submit" class="btn myBtn">搜索</button>
-	      </form>
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="logIn.html" target='_blank'>登录</a></li>
-	       <li><a href='register.html' target='_blank'>注册</a></li>
-	       <li><a href='userCenter.html'>我的</a></li>
-	      </ul>
-	    </div>
-	  </div>
-	</nav>
+	<div class='navbar'>
+		<ul class='navList clearfloat'>
+			<li><a href="index.html">首页</a></li>
+			<li><a href="userManage.html">用户管理</a></li>
+			<li><a href="index.html">房产信息管理</a></li>
+			<li><a href="index.html">房产租赁管理</a></li>
+		</ul>
+	</div>
 	<!-- 导航结束 -->
+	<!-- 管理员登录之后才能进行操作 -->
+	<!-- 管理员登录模块开始 -->
+	<div class='logInBlock'>
+		<form>
+			<h2>管理员登录</h2>
+		  <div class="form-group">
+		    <label for="exampleInputUserName">用户名:</label>
+		    <input type="text" class="form-control" id="exampleInputUserName" placeholder="userName">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">密码:</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		  </div>
+		  <button type="submit" class="btn myBtn">提交</button><a href='#'>忘记密码</a>
+		</form>
+	</div>
+	<!-- 登录模块结束 -->
 </body>
 </html>

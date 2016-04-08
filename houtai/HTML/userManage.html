@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户管理</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/userManage.css">
+</head>
+<body>
+	<!-- 导航开始 -->
+	<div class='navbar'>
+		<ul class='navList clearfloat'>
+			<li><a href="index.html">首页</a></li>
+			<li><a href="userManage.html">用户管理</a></li>
+			<li><a href="estatesMange.html">房产信息管理</a></li>
+			<li><a href="index.html">房产租赁管理</a></li>
+		</ul>
+	</div>
+	<!-- 导航结束 -->
+	<div class='container'>
+		<div class='row outerRow'>
+			<div class='col-md-3 col1'>
+				<div class='row'>
+					<div role="presentation"class='col-md-12 active deleteA'>
+						<a href="#delete" aria-controls="delete" role="tab" data-toggle="tab">删除用户</a>
+					</div>
+					<div role="presentation" class='col-md-12 addA'>
+						<a href="#add" aria-controls="add" role="tab" data-toggle="tab">添加用户</a>
+					</div>
+					<div role="presentation" class='col-md-12 modifyA'>	
+						<a href="#modify" aria-controls="modify" role="tab" data-toggle="tab">修改用户资料</a>
+					</div>
+				</div>
+			</div>
+			<div class='col-md-9 tab-content'>
+				<!-- 删除用户模块开始 -->
+					<div role="tabpanel" class="tab-pane active delete" id="delete">
+						<form class='seekForm'>
+							<div class='row'>
+								<div class='col-md-6 '>
+									<input type="text" class="form-control" id="seek" placeholder="输入关键字">
+								</div>
+								<div class='col-md-3'>
+									<button type='submit' class='btn' id='ok'>查询</button>
+								</div>
+							</div>
+						</form>
+						<div class='row header'>
+							<div class='col-md-3'>用户名</div>
+							<div class='col-md-3'>联系电话</div>
+							<div class='col-md-3'>电子邮箱</div>
+							<div class='col-md-3'>操作</div>
+						</div>
+						<!-- 下面是用户的信息 这里有一个例子-->
+						<div class='row show'>
+							<div class='col-md-3'>xxxxx</div>
+							<div class='col-md-3'>1235485852</div>
+							<div class='col-md-3'>459854@xxx.com</div>
+							<div class='col-md-3'><a href='#'>删除</a></div>
+						</div>
+						<!-- 例子结束 -->
+					</div>
+					<!-- 删除用户模块结束 -->
+					<!-- 添加用户模块开始 -->
+					<div role="tabpanel" class="tab-pane add" id="add">
+						<div class='registerBlock'>
+							<form>
+								<h2>添加用户</h2>
+							  <div class="form-group">
+							    <label for="exampleInputUserName">用户名:</label>
+							    <input type="text" class="form-control" id="exampleInputUserName" placeholder="userName">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputEmail">常用邮箱:</label>
+							    <input type="email" class="form-control" id="exampleInputEmail" placeholder="email">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputTel">联系电话:</label>
+							    <input type="text" class="form-control" id="exampleInputTel" placeholder="tel">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputPassword1">设置密码:</label>
+							    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputPassword2">确认密码:</label>
+							    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="confirm password">
+							  </div>
+							  <button type="submit" class="btn myBtn">提交</button>
+							  <button type='reset' class='btn cancel'>取消</button>
+							</form>
+						</div>
+					</div>
+					<!-- 添加用户模块结束 -->
+					<!-- 修改用户资料模块开始 -->
+					<div role="tabpanel" class="tab-pane modify" id="modify">
+						<form class='seekForm'>
+							<div class='row'>
+								<div class='col-md-6 '>
+									<input type="text" class="form-control" id="seek" placeholder="输入关键字">
+								</div>
+								<div class='col-md-3'>
+									<button type='submit' class='btn' id='ok'>查询</button>
+								</div>
+							</div>
+						</form>
+						<div class='row header'>
+							<div class='col-md-3'>用户名</div>
+							<div class='col-md-3'>联系电话</div>
+							<div class='col-md-3'>电子邮箱</div>
+							<div class='col-md-3'>操作</div>
+						</div>
+						<!-- 下面是用户的信息 这里有一个例子-->
+						<div class='row show'>
+							<div class='col-md-3'>xxxxx</div>
+							<div class='col-md-3'>1235485852</div>
+							<div class='col-md-3'>459854@xxx.com</div>
+							<div class='col-md-3'><a href='userMessageModify.html' target='_blank'>修改</a></div>
+						</div>
+						<!-- 例子结束 -->
+					</div>
+					<!-- 修改用户资料模块结束 -->
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src='../JS/jquery.min.js'></script>
+	<script type="text/javascript" src='../JS/bootstrap.min.js'></script>
+</body>
+</html>
