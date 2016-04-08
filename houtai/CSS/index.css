@@ -14,34 +14,24 @@ body{
 .navList li{
 	float: left; list-style: none; margin-right: 30px;
 }
-.navList li a{
+.navList li a,.rightNav li a{
 	text-decoration: none; color: #ffffff; font: 15px '宋体'
 }
-.navList li a{
-	text-decoration: none; color: #ffffff; font: 15px '宋体'
+.rightNav li{
+	float: right; margin-right: 20px; list-style:none;
 }
-.logInBlock{
-	width: 450px; margin: 0 auto;
-	margin-top:10%; border: 1px solid #D0CDCD; border-radius: 5px;
-	-moz-box-shadow:1px 1px 3px #D0CDCD; 
-	-webkit-box-shadow:1px 1px 3px #D0CDCD;
-	box-shadow:1px 1px 3px #D0CDCD; background-color: #ffffff;
+.rightNav{
+	margin-right: 50px;
 }
-.logInBlock form{
-	margin: 30px auto ;width: 340px;
+.note{
+	margin-left: 15%; 
 }
-.logInBlock form h2{
-	text-align: center; font: 20px '宋体';
+.note h1{
+	font: bolder 20px '宋体'; color: #4E4C4C;
 }
-.logInBlock form label{
-	font: 15px '宋体';color: #555555;
+.note a{
+	color:#E96E6E ;font: 13px '宋体'; text-decoration: underline;
 }
-form .myBtn{
-	background-color: #E33434; color: #ffffff; font: bold 15px '宋体';
-}
-form .myBtn:hover{
-	color: #ffffff;text-decoration: underline;
-}
-form a,form a:hover{
-	float: right;color: #E33434;
+.note p{
+	color: #7D7D7D ;font: 15px '宋体'; text-indent: 2em;
 }

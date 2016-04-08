@@ -14,11 +14,17 @@ body{
 .navList li{
 	float: left; list-style: none; margin-right: 30px;
 }
-.navList li a{
-	text-decoration: none; color: #ffffff; font: 15px '宋体'
-}
 .navList li a:hover{
 	text-decoration: underline;
+}
+.navList li a,.rightNav li a{
+	text-decoration: none; color: #ffffff; font: 15px '宋体'
+}
+.rightNav li{
+	float: right; margin-right: 20px; list-style:none;
+}
+.rightNav{
+	margin-right: 50px;
 }
 .outerRow{
 	margin-top: 30px;
