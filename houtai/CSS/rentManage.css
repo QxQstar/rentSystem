@@ -1,0 +1,52 @@
+*{
+	margin: 0;padding: 0;
+}
+body{
+	overflow-x: hidden; 
+}
+.navbar{
+	width: 100%; height: 50px; line-height: 50px; background-color:#D94949;
+	border-radius: 0;
+}
+.navList{
+	width: 400px; margin: 0 auto;
+}
+.navList li{
+	float: left; list-style: none; margin-right: 30px;
+}
+.navList li a,.rightNav li a{
+	text-decoration: none; color: #ffffff; font: 15px '宋体'
+}
+.rightNav li{
+	float: right; margin-right: 20px; list-style:none;
+}
+.rightNav{
+	margin-right: 50px;
+}
+.seekForm button{
+	background-color: #D74444; color: #fff;
+}
+.seekForm button:hover{
+	background-color: #D74444; color: #fff; text-decoration: underline;
+}
+.outerRow{
+	margin-top: 30px;
+}
+.col1{
+	margin-top:60px; 
+}
+.col1 .row div{
+	height: 30px; line-height:30px; 
+}
+.col1 a{
+	font: bolder 17px '宋体'; color: #767474;
+}
+.header{
+	 height: 30px; color: #C33030; margin-top: 20px ;margin-bottom: 10px; 
+}
+.order .row a,.rent .row a{
+	color: #C33030;
+}
+.show{
+	margin-bottom: 5px;
+}

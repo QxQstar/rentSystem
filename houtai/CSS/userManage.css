@@ -48,8 +48,8 @@ body{
 	margin-bottom: 5px;
 }
 .registerBlock{
-	width: 450px; /*margin: 0 auto;*/
-	margin-top:5%; border: 1px solid #D0CDCD; border-radius: 5px;
+	width: 450px; margin-left: 20px;
+	margin-top:0; border: 1px solid #D0CDCD; border-radius: 5px;
 	-moz-box-shadow:1px 1px 3px #D0CDCD; 
 	-webkit-box-shadow:1px 1px 3px #D0CDCD;
 	box-shadow:1px 1px 3px #D0CDCD; background-color: #ffffff;
